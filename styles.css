@@ -8,26 +8,44 @@ body {
     box-sizing: border-box;
     margin: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+svg {
+    color: tomato;
+    height: 30px;
+    width: 20px;
 }
 
 .yellow-color {
-    color: #dfdf89;
+    background-color: #dfdf89;
+    color: black;
 }
 
 .blue-color {
-    color: #70A7D8;
+    background-color: #70A7D8;
+    color: black;
 }
 
 .red-color {
-    color: #e5383b;
+    background-color: #e5383b;
+    color: black;
 }
 
 .golden-color {
-    color: #89753C;
+    background-color: #89753C;
+    color: black;
 }
 
 .green-color {
-    color: green;
+    background-color: green;
+    color: black;
+}
+
+.date {
+    color: #dfdf89;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 /**title**/
@@ -80,6 +98,15 @@ a#tribute-link {
     color: #dfdfdf;
 }
 
+/**Divider**/
+
+#divider {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    height: 3.5px;
+}
+
 /**Tribute-info**/
 
 #tribute-info {
@@ -89,9 +116,38 @@ a#tribute-link {
     border-radius: 30px;
     padding: 20px;
     margin-top: 10px;
-    background: linear-gradient(to bottom, #222222, #444444);
+    background-color: black;
     width: 90%;
     max-width: 100%;
     margin: 30px auto;
     display: block;
+    font-weight: 600;
+}
+
+/**Divider-2**/
+
+#divider-2 {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    height: 2.5px;
+}
+
+/**Timeline**/
+
+ul {
+    list-style: none;
+}
+
+li {
+    transition: all .4s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+#timeline {
+    text-align: center;
+    color: white;
 }
