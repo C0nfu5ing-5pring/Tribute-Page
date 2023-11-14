@@ -1,0 +1,97 @@
+body {
+    background-color: #000;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-family: 'Switzer', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.yellow-color {
+    color: #dfdf89;
+}
+
+.blue-color {
+    color: #70A7D8;
+}
+
+.red-color {
+    color: #e5383b;
+}
+
+.golden-color {
+    color: #89753C;
+}
+
+.green-color {
+    color: green;
+}
+
+/**title**/
+
+#title {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: transparent;
+    background: url('images/background.jpg') center/cover no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+/**img-div**/
+
+.img-div {
+    text-align: center;
+    padding: 20px;
+}
+
+/**image**/
+
+#image {
+    width: 90%;
+    max-width: 100%;
+    margin: 30px auto;
+    display: block;
+    border-radius: 30px;
+}
+
+/**image-caption**/
+
+#img-caption {
+    margin-top: 30px;
+    color: #dfdf89;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 301;
+}
+
+/**Javier**/
+
+a#tribute-link {
+    text-decoration: none;
+    color: #dfdfdf;
+}
+
+/**Tribute-info**/
+
+#tribute-info {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 10px;
+    background: linear-gradient(to bottom, #222222, #444444);
+    width: 90%;
+    max-width: 100%;
+    margin: 30px auto;
+    display: block;
+}
