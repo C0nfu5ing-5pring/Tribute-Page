@@ -221,4 +221,28 @@ li:hover {
     align-items: center;
 }
 
+/**Connect**/
+
+.connect {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /**Connect-logo**/
+
+.connect-logo {
+    margin-top: 20px;
+    width: 80px;
+    color: #dfdf89;
+}
+
+/**Copyright**/
+
+.copyright {
+    text-align: center;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 400;
+    color: #dfdf89;
+    margin-top: 30px;
+}
