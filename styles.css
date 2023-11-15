@@ -11,6 +11,11 @@ body {
     scroll-behavior: smooth;
 }
 
+*::selection {
+    background-color: #dfdf89;
+    color: black;
+}
+
 svg {
     color: tomato;
     height: 30px;
@@ -22,9 +27,17 @@ svg {
     color: black;
 }
 
+.yellow-color::selection {
+    background-color: fuchsia;
+}
+
 .blue-color {
     background-color: #70A7D8;
     color: black;
+}
+
+.blue-color::selection {
+    background-color: #e5383b;
 }
 
 .red-color {
@@ -32,9 +45,17 @@ svg {
     color: black;
 }
 
+.red-color::selection {
+    background-color: #70A7D8;
+}
+
 .golden-color {
     background-color: #89753C;
     color: black;
+}
+
+.golden-color::selection {
+    background-color: slateblue;
 }
 
 .green-color {
@@ -42,10 +63,15 @@ svg {
     color: black;
 }
 
+.green-color::selection {
+    background-color: #89753C;
+}
+
 .date {
-    color: #dfdf89;
+    color: tomato;
     font-weight: 700;
     font-size: 18px;
+    font-family: 'Clash Display', sans-serif;
 }
 
 /**title**/
@@ -104,7 +130,7 @@ a#tribute-link {
     background-color: white;
     width: 80%;
     margin: 0 auto;
-    height: 3.5px;
+    height: 2.5px;
 }
 
 /**Tribute-info**/
@@ -124,15 +150,6 @@ a#tribute-link {
     font-weight: 600;
 }
 
-/**Divider-2**/
-
-#divider-2 {
-    background-color: white;
-    width: 80%;
-    margin: 0 auto;
-    height: 2.5px;
-}
-
 /**Timeline**/
 
 ul {
@@ -140,6 +157,7 @@ ul {
 }
 
 li {
+    font-weight: 600;
     transition: all .4s ease-in-out;
 }
 
@@ -150,4 +168,46 @@ li:hover {
 #timeline {
     text-align: center;
     color: white;
+}
+
+/**gallery**/
+.gallery {
+    width: auto;
+    margin: 10px auto;
+    columns: 4;
+    column-gap: 20px;
+}
+
+/**box**/
+
+.box {
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+/**gallery-image**/
+
+.gallery .box img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+@media(max-width: 1200px) {
+    .gallery {
+        width: calc(100% - 40px);
+        columns: 3;
+    }
+}
+
+@media(max-width: 768px) {
+    .gallery {
+        columns: 2;
+    }
+}
+
+@media(max-width: 480px) {
+    .gallery {
+        columns: 1;
+    }
 }
