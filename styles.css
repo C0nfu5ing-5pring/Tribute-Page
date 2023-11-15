@@ -211,3 +211,14 @@ li:hover {
         columns: 1;
     }
 }
+
+/**Connect**/
+
+.connect {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**Connect-logo**/
