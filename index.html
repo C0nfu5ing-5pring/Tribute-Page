@@ -26,7 +26,7 @@
         </div>
         <hr id="divider">
         <h1 id="title-2" class="col-lg-12 col-md-12 col-sm-12">Introduction</h1>
-        <div id="tribute-info">
+        <div id="tribute-info" class="toggle">
             <p><span class="yellow-color">Lionel Messi</span>, born on June 24, 1987, in Rosario, <span
                     class="blue-color">Argentina</span>, is widely
                 regarded as one of the greatest
@@ -69,7 +69,7 @@
         </div>
         <hr id="divider">
         <h1 id="title-3" class="col-lg-12 col-md-12 col-sm-12">Timeline</h1>
-        <div id="timeline">
+        <div id="timeline" class="toggle">
             <ul>
                 <li>
                     <span class="date">June 24, 1987:</span> <span class="yellow-color">Lionel Andres Messi</span>
@@ -314,10 +314,10 @@
                     2026 season.
                 </li>
             </ul>
-            <hr id="divider">
         </div>
-        <h1 id="title-4" class="col-lg-12 col-md-12 col-sm-12">Gallery</h1>
-        <div class="gallery">
+        <hr id="divider">
+        <h1 id="title-4" class="col-lg-12 col-md-12 col-sm-12 toggle">Gallery</h1>
+        <div id="gallery">
             <div class="box"><img src="images/gallery-image-1.jpg" alt="Messi with World Cup in his hands."
                     loading="lazy"></div>
             <div class="box"><img src="images/gallery-image-2.jpg" alt="Young Messi" loading="lazy"></div>
@@ -359,7 +359,7 @@
         </div>
         <hr id="divider">
         <h1 id="title-5" class="col-lg-12 col-md-12 col-sm-12">Connect with Messi</h1>
-        <div class="connect col-lg-12 col-md-12 col-sm-6">
+        <div class="col-lg-12 col-md-12 col-sm-6" id="connect">
             <a href="https://twitter.com/TeamMessi" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                     height="16" fill="currentColor" class="bi bi-twitter-x connect-logo" viewBox="0 0 16 16">
                     <path
@@ -378,10 +378,13 @@
         </div>
         <br>
         <hr id="divider">
-        <div class="copyright">
+        <div class="copyright toggle">
             <p>&copy; 2023 Shish Fruitwala | Lionel Messi Tribute Page</p>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

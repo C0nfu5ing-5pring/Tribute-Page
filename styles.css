@@ -87,6 +87,7 @@ svg {
     text-align: center;
     margin: 20px;
     margin-top: 30px;
+    transition: all .6s ease-in-out;
 }
 
 #title-2 {
@@ -139,6 +140,7 @@ svg {
     text-align: center;
     margin: 20px;
     margin-top: 30px;
+    : 0;
 }
 
 /**img-div**/
@@ -198,7 +200,7 @@ a#tribute-link {
     width: 90%;
     max-width: 100%;
     margin: 30px auto;
-    display: block;
+    display: none;
     font-weight: 600;
 }
 
@@ -220,14 +222,16 @@ li:hover {
 #timeline {
     text-align: center;
     color: white;
+    display: none;
 }
 
 /**gallery**/
-.gallery {
+#gallery {
     width: auto;
     margin: 10px auto;
     columns: 4;
     column-gap: 20px;
+    display: none;
 }
 
 /**box**/
@@ -240,45 +244,35 @@ li:hover {
 
 /**gallery-image**/
 
-.gallery .box img {
+#gallery .box img {
     max-width: 100%;
     border-radius: 30px;
 }
 
 @media(max-width: 1200px) {
-    .gallery {
+    #gallery {
         width: calc(100% - 40px);
         columns: 3;
     }
 }
 
 @media(max-width: 768px) {
-    .gallery {
+    #gallery {
         columns: 2;
     }
 }
 
 @media(max-width: 480px) {
-    .gallery {
+    #gallery {
         columns: 1;
     }
 }
 
 /**Connect**/
 
-.connect {
+#connect {
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/**Connect**/
-
-.connect {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: none;
 }
 
 /**Connect-logo**/
