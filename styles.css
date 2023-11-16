@@ -181,10 +181,10 @@ a#tribute-link {
 /**Divider**/
 
 #divider {
-    background-color: white;
+    background-color: #dfdf89;
     width: 80%;
     margin: 0 auto;
-    height: 2.5px;
+    height: 3.5px;
 }
 
 /**Tribute-info**/
